@@ -1,0 +1,60 @@
+﻿{
+    "name": "Fantasmon-Terminal",
+    "description": "Tu Cuenta de Telegram se convierte en una terminal de codigo ,ejecutas los comando y puedes agregar archivos programados en python sin limites de imaginacion incluso aser hackeos desde telegram,entre otras cosas porgramadas en python",
+    "logo": "https://raw.githubusercontent.com/FastmoreCrak/privado/main/LOGO.png",
+    "keywords": [
+        "Telethon",
+        "telegram",
+        "userbot",
+        "python",
+        "ultroid"
+    ],
+    "repository": "https://github.com/FastmoreCrak/Fantasmas",
+    "website": "fastmorecrak.github.io/Home/index.html",
+    "success_url": "https://t.me/fastmorecrak",
+    "stack": "container",
+    "env": {
+        "API_ID": {
+            "description": "Tu api id, de my.telegram.org  ▁▂▃▄▅▆▇ by Fastmore Crak.",
+            "value": "", 
+            "required": false
+        },
+        "API_HASH": {
+            "description": "Tu api hash, de my.telegram.org ▁▂▃▄▅▆▇ by Fastmore Crak.",
+            "value": "",
+            "required": false
+        },
+        "SESSION": {
+            "description": "Su cadena de sesión. Se puede agregar ahora o después de la implementación. (¡El bot NO funcionará sin una cadena de sesión!)",
+            "value": ""
+        },
+        "REDIS_URI": {
+            "description": "URL de extremo de Redis, de redislabs.com",
+            "value": ""
+        },
+        "REDIS_PASSWORD": {
+            "description": "Contraseña de punto final de Redis, de redislabs.com",
+            "value": ""
+        },
+        "HEROKU_API": {
+            "description": "Token de la API de Heroku. Necesario si se implementa SOLO en heroku.",
+            "value": "",
+            "required": false
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Nombre de su aplicación heroku, dado en el primer espacio en blanco de esta página. Se agregará si se implementa SOLO en heroku.",
+            "value": "",
+            "required": false
+        }
+    },
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        },
+        "web": {
+            "quantity": 0,
+            "size": "free"
+        }
+    }
+}
